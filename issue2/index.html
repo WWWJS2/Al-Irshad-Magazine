@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#087f4f">
+<title>مجلة الابتدائية الثانية برأس تنورة — العدد الثاني</title>
+<style>
+:root{--green:#087f4f;--green2:#0aa667;--pink:#ec3f83;--blue:#176eb4;--ink:#14375c;--paper:#fff;--bg:#eef9f3;--line:#dbeae3;--shadow:0 18px 50px rgba(18,55,76,.18)}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Tahoma,Arial,"Noto Sans Arabic",sans-serif;background:radial-gradient(circle at 10% 5%,#dff8ff 0 18%,transparent 19%),linear-gradient(145deg,#f5fff9,#e8f7ff);color:var(--ink)}
+body{min-height:100vh}.app{width:min(100%,1100px);margin:auto;padding:14px clamp(10px,3vw,28px) 28px}.topbar{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:12px}.brand{min-width:0}.brand h1{font-size:clamp(17px,3vw,24px);margin:0;color:var(--green);font-weight:900}.brand p{margin:3px 0 0;color:#587080;font-size:13px}.actions{display:flex;gap:8px;flex-wrap:wrap}.btn{appearance:none;border:1px solid #cfe0d8;background:#fff;color:var(--ink);border-radius:14px;min-height:44px;padding:9px 13px;font-weight:800;cursor:pointer;box-shadow:0 3px 10px rgba(0,0,0,.04);font-size:14px}.btn:hover{background:#f8fffb}.btn:focus-visible{outline:3px solid #88d8b8;outline-offset:2px}.btn.primary{background:var(--green);color:#fff;border-color:var(--green)}.btn.pink{background:var(--pink);color:#fff;border-color:var(--pink)}
+.viewer-shell{display:grid;grid-template-columns:70px minmax(0,1fr) 70px;align-items:center;gap:14px}.navbtn{width:58px;height:58px;border:0;border-radius:50%;background:#fff;color:var(--green);font-size:30px;line-height:1;cursor:pointer;box-shadow:0 8px 22px rgba(15,75,95,.15);display:grid;place-items:center}.navbtn:disabled{opacity:.35;cursor:not-allowed}.navbtn:focus-visible{outline:3px solid #88d8b8}.stage{min-width:0;display:flex;justify-content:center;align-items:flex-start;overflow:auto;padding:4px}.page-wrap{position:relative;width:min(100%,720px);transition:width .18s ease}.page{width:100%;aspect-ratio:600/848;background-color:#fff;background-repeat:no-repeat;background-size:100% 700%;background-position-x:center;border-radius:7px;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.08);user-select:none;-webkit-user-select:none;touch-action:pan-y;transition:opacity .12s ease,transform .12s ease}.page.changing{opacity:.55;transform:scale(.995)}.counter{display:flex;align-items:center;justify-content:center;gap:8px;margin:12px auto 0;font-weight:900;color:var(--green)}.counter .pill{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 14px;min-width:116px;text-align:center}.progress{height:7px;background:#dbe8e1;border-radius:999px;overflow:hidden;max-width:720px;margin:10px auto 0}.progress>i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--green2),var(--pink));transition:width .22s ease}.hint{text-align:center;font-size:12px;color:#6d7f88;margin-top:8px}.mobile-nav{display:none;justify-content:center;gap:14px;margin-top:12px}.mobile-nav .btn{min-width:110px}
+.drawer{position:fixed;inset:0;z-index:20;background:rgba(8,30,43,.58);display:none;align-items:center;justify-content:center;padding:18px}.drawer.open{display:flex}.panel{width:min(92vw,650px);max-height:min(80vh,720px);overflow:auto;background:#fff;border-radius:22px;padding:18px;box-shadow:0 25px 70px rgba(0,0,0,.28)}.panel-head{display:flex;align-items:center;justify-content:space-between;gap:12px;position:sticky;top:-18px;background:#fff;padding:4px 0 12px;z-index:1}.panel h2{margin:0;color:var(--green);font-size:20px}.pages-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(62px,1fr));gap:9px}.pagepick{border:1px solid #d7e6df;background:#f7fcf9;border-radius:12px;min-height:52px;font-weight:900;color:var(--ink);cursor:pointer}.pagepick.current{background:var(--green);color:white;border-color:var(--green)}.pagepick:focus-visible{outline:3px solid #88d8b8}.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%) translateY(30px);opacity:0;background:#17384e;color:white;border-radius:999px;padding:10px 16px;font-size:13px;z-index:30;transition:.2s;pointer-events:none}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(max-width:760px){.app{padding:10px 8px 22px}.topbar{justify-content:center}.brand{text-align:center;width:100%}.actions{justify-content:center;width:100%}.actions .btn{padding:8px 10px;font-size:13px}.viewer-shell{display:block}.viewer-shell>.navbtn{display:none}.stage{padding:2px}.page-wrap{width:min(100%,590px)}.mobile-nav{display:flex}.hint{font-size:11px}}
+@media(max-width:380px){.btn{font-size:12px}.mobile-nav .btn{min-width:96px}.brand p{font-size:12px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main class="app" id="app">
+  <header class="topbar">
+    <div class="brand">
+      <h1>مجلة الابتدائية الثانية برأس تنورة — العدد الثاني</h1>
+      <p>نسخة إلكترونية تفاعلية • ٢٨ صفحة</p>
+    </div>
+    <div class="actions" aria-label="أدوات المجلة">
+      <button class="btn primary" id="tocBtn" type="button">☷ الفهرس</button>
+      <button class="btn" id="zoomOut" type="button" aria-label="تصغير">− تصغير</button>
+      <button class="btn" id="zoomIn" type="button" aria-label="تكبير">＋ تكبير</button>
+      <button class="btn" id="fullBtn" type="button">⛶ ملء الشاشة</button>
+      <button class="btn pink" id="shareBtn" type="button">↗ مشاركة</button>
+      <a class="btn" href="../" style="text-decoration:none;display:inline-flex;align-items:center">العدد الأول</a>
+    </div>
+  </header>
+  <section class="viewer-shell" aria-label="قارئ المجلة">
+    <button class="navbtn" id="prev" type="button" aria-label="الصفحة السابقة">›</button>
+    <div class="stage" id="stage"><div class="page-wrap" id="pageWrap"><div class="page" id="page" role="img" aria-label="صفحة 1 من المجلة"></div></div></div>
+    <button class="navbtn" id="next" type="button" aria-label="الصفحة التالية">‹</button>
+  </section>
+  <div class="mobile-nav">
+    <button class="btn" id="prevMobile" type="button">› السابقة</button>
+    <button class="btn primary" id="nextMobile" type="button">التالية ‹</button>
+  </div>
+  <div class="counter" aria-live="polite"><span class="pill" id="counter">صفحة ١ من ٢٨</span></div>
+  <div class="progress" aria-hidden="true"><i id="bar"></i></div>
+  <p class="hint">يمكنك السحب يمينًا ويسارًا على الجوال، أو استخدام أسهم لوحة المفاتيح.</p>
+</main>
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="فهرس الصفحات">
+  <div class="panel"><div class="panel-head"><h2>انتقلي إلى صفحة</h2><button class="btn" id="closeDrawer" type="button">إغلاق ×</button></div><div class="pages-grid" id="pagesGrid"></div></div>
+</div>
+<div class="toast" id="toast" aria-live="polite"></div>
+<script>
+(()=>{
+  const TOTAL=28;
+  const sprites=['assets/sprite-01.webp','assets/sprite-08.webp','assets/sprite-15.webp','assets/sprite-22.webp'];
+  const arabicDigits=n=>String(n).replace(/\d/g,d=>'٠١٢٣٤٥٦٧٨٩'[d]);
+  const page=document.getElementById('page'), wrap=document.getElementById('pageWrap'), counter=document.getElementById('counter'), bar=document.getElementById('bar');
+  const prev=document.getElementById('prev'), next=document.getElementById('next'), prevM=document.getElementById('prevMobile'), nextM=document.getElementById('nextMobile');
+  const drawer=document.getElementById('drawer'), grid=document.getElementById('pagesGrid'), toast=document.getElementById('toast');
+  let current=Math.min(TOTAL,Math.max(1,parseInt(location.hash.replace('#p',''),10)||1));
+  let zoom=1, startX=null, startY=null;
+  function spriteFor(n){return sprites[Math.floor((n-1)/7)];}
+  function localIndex(n){return (n-1)%7;}
+  function positionFor(n){const i=localIndex(n);return (i/6*100)+'%';}
+  function showToast(msg){toast.textContent=msg;toast.classList.add('show');clearTimeout(showToast.t);showToast.t=setTimeout(()=>toast.classList.remove('show'),1800);}
+  function render(animate=true){
+    if(animate){page.classList.add('changing');setTimeout(()=>page.classList.remove('changing'),110);}
+    page.style.backgroundImage='url("'+spriteFor(current)+'")';
+    page.style.backgroundPositionY=positionFor(current);
+    page.setAttribute('aria-label','صفحة '+current+' من المجلة');
+    counter.textContent='صفحة '+arabicDigits(current)+' من '+arabicDigits(TOTAL);
+    bar.style.width=(current/TOTAL*100)+'%';
+    prev.disabled=prevM.disabled=current===1; next.disabled=nextM.disabled=current===TOTAL;
+    [...grid.children].forEach((b,i)=>b.classList.toggle('current',i+1===current));
+    history.replaceState(null,'','#p'+current);
+    const im=new Image();im.src=spriteFor(Math.min(TOTAL,current+1));
+  }
+  function go(n){const target=Math.max(1,Math.min(TOTAL,n));if(target===current)return;current=target;render();document.getElementById('stage').scrollTo({left:0,top:0,behavior:'smooth'});}
+  for(let i=1;i<=TOTAL;i++){const b=document.createElement('button');b.type='button';b.className='pagepick';b.textContent=arabicDigits(i);b.setAttribute('aria-label','الانتقال إلى الصفحة '+i);b.addEventListener('click',()=>{go(i);drawer.classList.remove('open');});grid.appendChild(b);}
+  prev.addEventListener('click',()=>go(current-1)); next.addEventListener('click',()=>go(current+1)); prevM.addEventListener('click',()=>go(current-1)); nextM.addEventListener('click',()=>go(current+1));
+  document.getElementById('tocBtn').addEventListener('click',()=>drawer.classList.add('open'));
+  document.getElementById('closeDrawer').addEventListener('click',()=>drawer.classList.remove('open'));
+  drawer.addEventListener('click',e=>{if(e.target===drawer)drawer.classList.remove('open')});
+  document.getElementById('zoomIn').addEventListener('click',()=>{zoom=Math.min(1.65,zoom+.15);wrap.style.width='min('+Math.round(100*zoom)+'%, '+Math.round(720*zoom)+'px)';showToast('التكبير '+Math.round(zoom*100)+'٪')});
+  document.getElementById('zoomOut').addEventListener('click',()=>{zoom=Math.max(.7,zoom-.15);wrap.style.width='min('+Math.round(100*zoom)+'%, '+Math.round(720*zoom)+'px)';showToast('التكبير '+Math.round(zoom*100)+'٪')});
+  document.getElementById('fullBtn').addEventListener('click',async()=>{try{if(!document.fullscreenElement)await document.documentElement.requestFullscreen();else await document.exitFullscreen();}catch(e){showToast('ملء الشاشة غير متاح في هذا المتصفح');}});
+  document.getElementById('shareBtn').addEventListener('click',async()=>{const data={title:document.title,text:'العدد الثاني من مجلة الابتدائية الثانية برأس تنورة',url:location.href};try{if(navigator.share)await navigator.share(data);else showToast('انسخي رابط الصفحة من شريط العنوان للمشاركة');}catch(e){}});
+  document.addEventListener('keydown',e=>{if(['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName))return;if(e.key==='ArrowLeft')go(current+1);if(e.key==='ArrowRight')go(current-1);if(e.key==='Escape')drawer.classList.remove('open');});
+  page.addEventListener('pointerdown',e=>{startX=e.clientX;startY=e.clientY;});
+  page.addEventListener('pointerup',e=>{if(startX===null)return;const dx=e.clientX-startX,dy=e.clientY-startY;startX=startY=null;if(Math.abs(dx)>55&&Math.abs(dx)>Math.abs(dy)*1.2){dx<0?go(current+1):go(current-1);}});
+  window.addEventListener('hashchange',()=>{const n=parseInt(location.hash.replace('#p',''),10);if(Number.isFinite(n)&&n>=1&&n<=TOTAL){current=n;render(false);}});
+  render(false);
+})();
+</script>
+</body>
+</html>
